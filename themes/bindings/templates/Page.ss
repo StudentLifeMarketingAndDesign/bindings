@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html class="no-js" lang="$ContentLocale.ATT" dir="$i18nScriptDirection.ATT">
 <head>
 	<% base_tag %>
@@ -22,11 +23,26 @@
 </head>
 <body class="$ClassName.ATT">
 
-	<header class="header" role="banner">
-		<div class="fixed contain-to-grid">
-			<% include TopBar %>
-		</div>
-	</header>
+	<div class = "off-canvas-wrap">
+	<div class = "inner-wrap">
+	<nav class = "tab-bar">
+		<section class="left-small">
+			<a class = "left-off-canvas-toggle menu-icon"><span></span></a>
+		</section>
+		<section class="middle tab-bar-section">
+			<h1 class = "title">Foundation</h1>
+		</section>
+	</nav>
+	<aside class="left-off-canvas-menu">
+		
+			<ul class = "off-canvas-list">
+			    <% loop $Menu(1) %>     
+			        <li class="$LinkingMode">
+			            <a href="$Link" title="$Title.XML">$MenuTitle.XML</a>
+			        </li>
+			    <% end_loop %>
+			</ul>
+	</aside>	
 
 	<div class="main typography" role="main">
 		<div class="row">
@@ -49,6 +65,7 @@
 			</div>
 		</div>
 	</footer>
+	
 
 	<%--Login Modal--%>
 	<div id="login-form-modal" class="reveal-modal medium" data-reveal>
@@ -61,5 +78,10 @@
 	<script src="$ThemeDir/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="$ThemeDir/bower_components/foundation/js/foundation.min.js"></script>
 	<script src="$ThemeDir/javascript/app.js"></script>
+	
 </body>
+	<a class="exit-off-canvas"></a>
+	</div>
+</div>
+
 </html>
