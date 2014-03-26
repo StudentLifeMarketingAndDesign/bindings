@@ -7284,7 +7284,7 @@ blockquote p {
 
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: #30ceda;
   color: white;
   height: 2.8125rem;
   line-height: 2.8125rem;
@@ -7305,7 +7305,7 @@ blockquote p {
   height: 2.8125rem;
   position: absolute;
   top: 0;
-  border-right: solid 1px #1a1a1a;
+  border-right: solid 1px #146a71;
   left: 0;
 }
 
@@ -7314,7 +7314,7 @@ blockquote p {
   height: 2.8125rem;
   position: absolute;
   top: 0;
-  border-left: solid 1px #1a1a1a;
+  border-left: solid 1px #146a71;
   right: 0;
 }
 
@@ -7360,12 +7360,12 @@ blockquote p {
   height: 0;
   left: 0.8125rem;
   top: 0.3125rem;
-  -webkit-box-shadow: 1px 10px 1px 1px white, 1px 16px 1px 1px white, 1px 22px 1px 1px white;
-  box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
+  -webkit-box-shadow: 1px 10px 1px 1px silver, 1px 16px 1px 1px silver, 1px 22px 1px 1px silver;
+  box-shadow: 0 10px 0 1px silver, 0 16px 0 1px silver, 0 22px 0 1px silver;
 }
 .tab-bar .menu-icon:hover span {
-  -webkit-box-shadow: 1px 10px 1px 1px #b3b3b3, 1px 16px 1px 1px #b3b3b3, 1px 22px 1px 1px #b3b3b3;
-  box-shadow: 0 10px 0 1px #b3b3b3, 0 16px 0 1px #b3b3b3, 0 22px 0 1px #b3b3b3;
+  -webkit-box-shadow: 1px 10px 1px 1px #868686, 1px 16px 1px 1px #868686, 1px 22px 1px 1px #868686;
+  box-shadow: 0 10px 0 1px #868686, 0 16px 0 1px #868686, 0 22px 0 1px #868686;
 }
 
 .left-off-canvas-menu {
@@ -7375,7 +7375,7 @@ blockquote p {
   bottom: 0;
   position: absolute;
   overflow-y: auto;
-  background: #333333;
+  background: white;
   z-index: 1001;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -7397,7 +7397,7 @@ blockquote p {
   bottom: 0;
   position: absolute;
   overflow-y: auto;
-  background: #333333;
+  background: white;
   z-index: 1001;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -7418,24 +7418,24 @@ ul.off-canvas-list {
   margin: 0;
 }
 ul.off-canvas-list li label {
-  padding: 0.3rem 0.9375rem;
-  color: #999999;
+  padding: 0.66667rem;
+  color: #4f4f4f;
   text-transform: uppercase;
-  font-weight: bold;
-  background: #444444;
-  border-top: 1px solid #5e5e5e;
+  font-weight: none;
+  background: #f6f6f6;
+  border-top: none;
   border-bottom: none;
   margin: 0;
 }
 ul.off-canvas-list li a {
   display: block;
   padding: 0.66667rem;
-  color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid #262626;
+  color: #4b4b4b;
+  border-bottom: none;
   transition: background 300ms ease;
 }
 ul.off-canvas-list li a:hover {
-  background: #242424;
+  background: #1c959e;
 }
 
 .move-right > .inner-wrap {
@@ -7449,7 +7449,7 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   display: block;
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
@@ -7477,7 +7477,7 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   display: block;
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
@@ -7857,4 +7857,34 @@ th.hide-for-touch {
 .main {
   padding-top: 32px;
   min-height: 320px;
+}
+
+ul.off-canvas-list .childList {
+  height: 100%;
+  padding: 15px 0px 13px 0px;
+  margin-left: 13px;
+  border-bottom: 1px solid #f6f6f6;
+  overflow: auto;
+}
+ul.off-canvas-list .childList:hover {
+  border-right: 2px solid #30ceda;
+}
+ul.off-canvas-list img {
+  float: left;
+  margin: 0 10px 0 10px;
+  vertical-align: middle;
+}
+
+ul.off-canvas-list li a {
+  padding: 0;
+  margin-top: -5px;
+}
+ul.off-canvas-list li a:hover {
+  background: none;
+}
+
+ul.off-canvas-list li p {
+  font-size: 10px;
+  color: #888888;
+  margin-top: -5px;
 }

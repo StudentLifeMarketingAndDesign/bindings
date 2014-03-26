@@ -29,7 +29,7 @@
 			<a class = "left-off-canvas-toggle menu-icon"><span></span></a>
 		</section>
 		<section class="middle tab-bar-section">
-			<h1 class = "title">Foundation</h1>
+			<h1 class = "title">Bindings</h1>
 		</section>
 	</nav>
 	<aside class="left-off-canvas-menu">
@@ -37,8 +37,20 @@
 			<ul class = "off-canvas-list">
 			    <% loop $Menu(1) %>     
 			        <li class="$LinkingMode">
-			            <a href="$Link" title="$Title.XML">$MenuTitle.XML</a>
+			        <label>$MenuTitle.XML</label>
 			        </li>
+				   <% if $Children%>
+					        <% loop $Children %> 
+					        	<li class = "childList">
+					        	
+					     			<img src="$ThemeDir/images/PlaceholderBinding.png" alt="Smiley face" height="50" width="50">
+							        <a href="$Link" class="childLink" title="$Title.XML">$MenuTitle.XML</a>
+									<p><!--$AuthorName-->John Culshaw</p>
+									<!--- author name --->
+									
+					        	</li>
+					        <% end_loop %> 
+				    <% end_if %> 
 			    <% end_loop %>
 			</ul>
 	</aside>	
