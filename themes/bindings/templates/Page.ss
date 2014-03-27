@@ -42,12 +42,12 @@
 				   <% if $Children%>
 					        <% loop $Children %> 
 					        	<li class = "childList">
-					        	
+					        		<a href="$Link" class="childLink" title="$Title.XML">
 					     			<img src="$ThemeDir/images/PlaceholderBinding.png" alt="Smiley face" height="50" width="50">
-							        <a href="$Link" class="childLink" title="$Title.XML">$MenuTitle.XML</a>
-									<p><!--$AuthorName-->John Culshaw</p>
-									<!--- author name --->
-									
+							          $MenuTitle.XML
+										<p><!--$AuthorName-->John Culshaw</p>
+										<!--- author name --->
+					        		</a>
 					        	</li>
 					        <% end_loop %> 
 				    <% end_if %> 

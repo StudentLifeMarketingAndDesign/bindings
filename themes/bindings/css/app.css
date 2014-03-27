@@ -7861,8 +7861,7 @@ th.hide-for-touch {
 
 ul.off-canvas-list .childList {
   height: 100%;
-  padding: 15px 0px 13px 0px;
-  margin-left: 13px;
+  padding: 17px 0px 6px 0px;
   border-bottom: 1px solid #f6f6f6;
   overflow: auto;
 }
