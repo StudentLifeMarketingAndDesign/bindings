@@ -94,10 +94,10 @@ article .article-text {
 }
 
 article header {
+	margin: 10px auto;
 	@media #{$medium-up} {
 		padding: 20px 30px 10px 30px;
 		max-width: 600px;
-		margin: auto;
 	}
 }
 

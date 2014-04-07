@@ -8067,11 +8067,13 @@ h1.title img, .title-area h1 img {
   }
 }
 
+article header {
+  margin: 10px auto;
+}
 @media only screen and (min-width: 40.063em) {
   article header {
     padding: 20px 30px 10px 30px;
     max-width: 600px;
-    margin: auto;
   }
 }
 
