@@ -1,4 +1,4 @@
-<li class="<% if $LinkingMode == "current" || $LinkingMode == "section" %>active<% end_if %>"><a href="$Link">$MenuTitle</a>
+<li class="<% if $LinkingMode == "current" || $LinkingMode == "section" %>active<% end_if %>"><a href="$Link"><span class="category">Category</span>$MenuTitle</a>
 <% if $Children && $Parent %>
 	<ul>
 		<% loop $Children %>

@@ -8074,3 +8074,10 @@ h1.title img, .title-area h1 img {
     margin: auto;
   }
 }
+
+.category {
+  text-transform: uppercase;
+  display: block;
+  color: #19838b;
+  font-size: 0.8125rem;
+}

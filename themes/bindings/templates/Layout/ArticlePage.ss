@@ -1,5 +1,6 @@
 <article>
 	<header>
+		<span class="category">Category</span>
 		<h2>$Title</h2>
 		<p>$Byline</p>
 	</header>

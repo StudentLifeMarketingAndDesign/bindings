@@ -23,7 +23,7 @@ class ArticlePage extends Page {
 
 		$f->addFieldToTab("Root.Main", new TextField("Subheader"), "Content");
 		$f->addFieldToTab("Root.Main", new TextField("Byline"), "Content");
-		$f->addFieldToTab("Root.Main", new ImageField("CoverImage", "Cover Image"), "Content");
+		$f->addFieldToTab("Root.Main", new UploadField("CoverImage", "Cover Image"), "Content");
 		
 		return $f;
 	}
