@@ -22,19 +22,19 @@
 	<script src="$ThemeDir/bower_components/modernizr/modernizr.js"></script>
 </head>
 <body class="$ClassName.ATT">
-<div class = "off-canvas-wrap">
-	<div class = "inner-wrap">
-	<nav class = "tab-bar">
+<div class="off-canvas-wrap">
+	<div class="inner-wrap">
+	<% include TopBar %>	
+	<nav class="tab-bar show-for-small">
 		<section class="left-small">
-			<a class = "left-off-canvas-toggle menu-icon"><span></span></a>
+			<a class="left-off-canvas-toggle menu-icon"><span></span></a>
 		</section>
 		<section class="middle tab-bar-section">
-			<h1 class = "title">Bindings</h1>
+			<h1 class="title"><img src="{$ThemeDir}/images/logo.png"/></h1>
 		</section>
 	</nav>
 	<aside class="left-off-canvas-menu">
-		
-			<ul class = "off-canvas-list">
+			<ul class="off-canvas-list">
 			    <% loop $Menu(1) %>     
 			        <li class="$LinkingMode">
 			        <label>$MenuTitle.XML</label>
@@ -56,8 +56,13 @@
 	</aside>	
 
 	<div class="main typography" role="main">
-		<div class="row">
+		<div class="row content">
+			<div class="large-3 medium-4 side-nav-column large-uncentered columns hide-for-small">
+				<% include SideNav %>
+			</div>
+			<div class="large-9 medium-8 main-column columns">
 			$Layout
+			</div>
 		</div>
 	</div>
 
@@ -93,6 +98,6 @@
 </body>
 	<a class="exit-off-canvas"></a>
 	</div>
-</div>
+</div><!-- end off-canvas-wrap -->
 
 </html>

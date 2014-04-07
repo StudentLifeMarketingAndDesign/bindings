@@ -1,13 +1,6 @@
 <ul class="side-nav">
-	<% if $Parent.Parent %>
-		<% with $Parent.Parent  %>
-			<% include SideNavMenuItems %>
-		<% end_with %>
-	<% else_if $Parent %>
-		<% with $Parent %>
-			<% include SideNavMenuItems %>
-		<% end_with %>
-	<% else %>
+	<% with CurrentIssue %>
+		<li class="issue-title"><a href="$Link">Table of Contents</a></li>
 		<% include SideNavMenuItems %>
-	<% end_if %>
+	<% end_with %>
 </ul>

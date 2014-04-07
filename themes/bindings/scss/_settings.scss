@@ -2,12 +2,14 @@
 // https://github.com/zurb/bower-foundation/blob/master/scss/foundation/_settings.scss
 
 // Default Colors
-$primary-color: #4DAFE4;
+$primary-color: #30ceda;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+$gray: #333;
+$lightGray: #F6F6F6;
 
 // Foundation by ZURB
 // foundation.zurb.com
@@ -46,7 +48,7 @@ $primary-color: #4DAFE4;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+ $row-width: rem-calc(1400);
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
@@ -638,7 +640,7 @@ $primary-color: #4DAFE4;
 
 // Off-canvas
 
-   $tabbar-bg: #30ceda;
+   $tabbar-bg: $primary-color;
 // $tabbar-height: rem-calc(45);
 // $tabbar-line-height: $tabbar-height;
 // $tabbar-color: #FFF;
@@ -658,12 +660,15 @@ $primary-color: #4DAFE4;
 // $off-canvas-width: 250px;
    $off-canvas-bg: #fff !default;
 
+$tabbar-right-section-border: none;
+$tabbar-left-section-border: none;
+
 // Off Canvas Menu List Variables
    $off-canvas-label-padding: rem-calc(10, 15);
    $off-canvas-label-color: #4f4f4f;
 // $off-canvas-label-text-transform: uppercase;
    $off-canvas-label-font-weight: none;
-   $off-canvas-label-bg: #f6f6f6;
+   $off-canvas-label-bg: $lightGray;
    $off-canvas-label-border-top: none; 
    $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin: rem-calc(10, 15);
@@ -672,9 +677,9 @@ $primary-color: #4DAFE4;
    $off-canvas-link-border-bottom: none;
 
 // Off Canvas Menu Icon Variables
-   $tabbar-menu-icon-color: #C0C0C0;
+   $tabbar-menu-icon-color: white;
 // $tabbar-menu-icon-hover: scale-color($tabbar-menu-icon-color, $lightness: -30%);
-
+$off-canvas-overlay-box-shadow: none;
 // $tabbar-menu-icon-text-indent: rem-calc(35);
 // $tabbar-menu-icon-width: $tabbar-height;
 // $tabbar-menu-icon-height: $tabbar-height;
@@ -899,18 +904,18 @@ $primary-color: #4DAFE4;
 // $include-html-nav-classes: $include-html-classes;
 
 // We use this to control padding.
-// $side-nav-padding: rem-calc(14 0);
+ $side-nav-padding: rem-calc(0 0 0 0);
 
 // We use these to control list styles.
 // $side-nav-list-type: none;
 // $side-nav-list-position: inside;
-// $side-nav-list-margin: rem-calc(0 0 7 0);
+ $side-nav-list-margin: rem-calc(0 0 0 0);
 
 // We use these to control link styles.
-// $side-nav-link-color: $primary-color;
+ $side-nav-link-color: $gray;
 // $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
-// $side-nav-font-size: rem-calc(14);
+ $side-nav-font-size: rem-calc(18);
 // $side-nav-font-weight: normal;
 // $side-nav-font-family: $body-font-family;
 // $side-nav-active-font-family: $side-nav-font-family;
@@ -1130,7 +1135,7 @@ $primary-color: #4DAFE4;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+ $topbar-bg-color: $primary-color;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin

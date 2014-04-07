@@ -2,7 +2,6 @@
 @import "foundation";
 
 .main {
-	padding-top: 32px;
 	min-height: 320px;
 }
 
@@ -24,7 +23,6 @@ ul.off-canvas-list
 	}
 	 	
 }
-
 ul.off-canvas-list li a {
 	padding: 0;
 	margin-top: -5px; 
@@ -36,4 +34,69 @@ ul.off-canvas-list li p {
 	font-size: 10px;
 	color: #888888; 
 	margin-top: -5px;
+}
+
+h1.title img, .title-area h1 img {
+	height: 30px;
+}
+
+.move-right .exit-off-canvas{
+	box-shadow: none;
+}
+
+.side-nav>li.issue-title {
+	text-transform: uppercase;
+	font-size: rem-calc(24);
+}
+
+.side-nav>li {
+	padding: rem-calc(12 0);
+	border-bottom: 1px solid darken($lightGray, 10);
+	border-right: 2px solid darken($lightGray, 10);
+}
+
+.side-nav>li:hover{
+	border-right: 2px solid $primary-color;
+	background: white;
+}
+
+.side-nav>li a{
+	padding-left: rem-calc(20);
+}
+
+.side-nav-column {
+	background: $lightGray;
+	@media #{$medium-up} {
+		@include grid-column(
+			$collapse: true
+		);
+	};
+} 
+
+.main-column{
+	@media #{$medium-up} {
+		@include grid-column(
+			$collapse: true
+		);	
+	}
+}
+
+.row.content {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+article .article-text {
+	@media #{$medium-up} {
+		max-width: 600px;
+		margin: auto;
+	}
+}
+
+article header {
+	@media #{$medium-up} {
+		padding: 20px 30px 10px 30px;
+		max-width: 600px;
+		margin: auto;
+	}
 }

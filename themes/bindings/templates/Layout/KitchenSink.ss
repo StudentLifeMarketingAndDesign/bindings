@@ -1,4 +1,4 @@
-<div class="<% if $Children || $Parent %>large-9 large-push-3<% else %>large-12<% end_if %> columns">
+
 	<h2>$Title</h2>
 	<h3 class="subheader">This page includes every single Foundation element so that we can make sure things work together smoothly.</h3>
 
@@ -667,11 +667,3 @@
 		<strong class="show-for-touch">You are on a touch-enabled device.</strong>
 		<strong class="hide-for-touch">You are not on a touch-enabled device.</strong>
 	</p>
-</div>
-<% if $Children || $Parent %><%--Determine if Side Nav should be rendered, you can change this logic--%>
-<div class="large-3 large-pull-9 columns">
-	<div class="panel">
-		<% include SideNav %>
-	</div>
-</div>
-<% end_if %>
