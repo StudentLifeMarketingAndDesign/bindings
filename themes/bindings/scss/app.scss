@@ -16,13 +16,17 @@ ul.off-canvas-list
 		overflow: auto;
 	}
 	
-	img {
-		float: left;
-		margin: 0 10px 0 10px; 
-		vertical-align:middle
-	}
 	 	
 }
+
+.childList {
+	img {
+		float: left;
+		margin: 0 10px 0 0px;
+		vertical-align:middle
+	}
+}
+
 ul.off-canvas-list li a {
 	padding: 0;
 	margin-top: -5px; 
@@ -38,34 +42,51 @@ ul.off-canvas-list li p {
 
 h1.title img, .title-area h1 img {
 	height: 30px;
+	@media #{$medium-up} {
+		height: 55px;
+		margin-top: 6px;
+	}
+}
+
+.name {
+	position: relative;
+	z-index: 1000;
+}
+.name .category {
+	display: inline-block;
+	margin-left: 8px;
+
 }
 
 .move-right .exit-off-canvas{
 	box-shadow: none;
 }
 
+.side-nav{
+	margin-top: 10px;
+
+
+}
+
 .side-nav>li.issue-title {
 	text-transform: uppercase;
-	font-size: rem-calc(24);
 }
 
 .side-nav>li {
-	padding: rem-calc(12 0);
-	border-bottom: 1px solid darken($lightGray, 10);
-	border-right: 2px solid darken($lightGray, 10);
+	padding: rem-calc(12);
+	border-bottom: 1px solid #F0F0F0;
 }
 
 .side-nav>li:hover{
 	border-right: 2px solid $primary-color;
-	background: white;
+	background: $lightGray;
 }
 
 .side-nav>li a{
-	padding-left: rem-calc(20);
+
 }
 
 .side-nav-column {
-	background: $lightGray;
 	@media #{$medium-up} {
 		@include grid-column(
 			$collapse: true
@@ -89,21 +110,23 @@ h1.title img, .title-area h1 img {
 article .article-text {
 	@media #{$medium-up} {
 		max-width: 600px;
-		margin: auto;
+		padding-left: 20px;
 	}
 }
 
+article img.cover {
+	margin-bottom: 20px;
+}
 article header {
-	margin: 10px auto;
 	@media #{$medium-up} {
-		padding: 20px 30px 10px 30px;
-		max-width: 600px;
+		padding-left: 20px
+
 	}
 }
 
 .category{
 	text-transform: uppercase;
 	display: block;
-	color: darken($primary-color, 20);
-	font-size: rem-calc(13);
+	color: $primary-color;
+	font-size: rem-calc(10);
 }
