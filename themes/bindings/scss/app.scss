@@ -44,7 +44,6 @@ h1.title img, .title-area h1 img {
 	height: 30px;
 	@media #{$medium-up} {
 		height: 55px;
-		margin-left: 3px;
 		margin-top: 6px;
 	}
 }
@@ -74,7 +73,7 @@ h1.title img, .title-area h1 img {
 }
 
 .side-nav>li {
-	padding: rem-calc(12 0);
+	padding: rem-calc(12);
 	border-bottom: 1px solid #F0F0F0;
 }
 
@@ -84,7 +83,7 @@ h1.title img, .title-area h1 img {
 }
 
 .side-nav>li a{
-	padding-left: rem-calc(20);
+
 }
 
 .side-nav-column {
@@ -129,5 +128,5 @@ article header {
 	text-transform: uppercase;
 	display: block;
 	color: $primary-color;
-	font-size: rem-calc(12);
+	font-size: rem-calc(10);
 }

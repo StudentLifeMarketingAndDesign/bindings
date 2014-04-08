@@ -5307,7 +5307,7 @@ dialog[open] {
 }
 .side-nav li {
   margin: 0 0 0 0;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .side-nav li a:not(.button) {
   display: block;

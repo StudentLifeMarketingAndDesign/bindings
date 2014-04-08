@@ -5307,7 +5307,7 @@ dialog[open] {
 }
 .side-nav li {
   margin: 0 0 0 0;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .side-nav li a:not(.button) {
   display: block;
@@ -8015,7 +8015,6 @@ h1.title img, .title-area h1 img {
 @media only screen and (min-width: 40.063em) {
   h1.title img, .title-area h1 img {
     height: 55px;
-    margin-left: 3px;
     margin-top: 6px;
   }
 }
@@ -8043,17 +8042,13 @@ h1.title img, .title-area h1 img {
 }
 
 .side-nav > li {
-  padding: 0.75rem 0;
+  padding: 0.75rem;
   border-bottom: 1px solid #F0F0F0;
 }
 
 .side-nav > li:hover {
   border-right: 2px solid #28acb6;
   background: #f6f6f6;
-}
-
-.side-nav > li a {
-  padding-left: 1.25rem;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -8098,5 +8093,5 @@ article img.cover {
   text-transform: uppercase;
   display: block;
   color: #28acb6;
-  font-size: 0.75rem;
+  font-size: 0.625rem;
 }
