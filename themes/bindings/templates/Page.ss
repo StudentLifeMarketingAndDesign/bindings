@@ -33,25 +33,15 @@
 			<h1 class="title"><img src="{$ThemeDir}/images/logo.png"/></h1>
 		</section>
 	</nav>
-	<aside class="left-off-canvas-menu">
+	<aside class="left-off-canvas-menu show-for-small">
 			<ul class="off-canvas-list">
-			    <% loop $Menu(1) %>     
-			        <li class="$LinkingMode">
-			        <label>$MenuTitle.XML</label>
-			        </li>
+			    <% with $CurrentIssue %>     
 				   <% if $Children%>
 					        <% loop $Children %> 
-					        	<li class = "childList">
-					        		<a href="$Link" class="childLink" title="$Title.XML">
-					     			<img src="$ThemeDir/images/PlaceholderBinding.png" alt="Smiley face" height="50" width="50">
-							          $MenuTitle.XML
-										<p><!--$AuthorName-->John Culshaw</p>
-										<!--- author name --->
-					        		</a>
-					        	</li>
+								<% include SideNavMenuItem %>
 					        <% end_loop %> 
 				    <% end_if %> 
-			    <% end_loop %>
+			    <% end_with %>
 			</ul>
 	</aside>	
 
@@ -61,7 +51,7 @@
 				<% include SideNav %>
 			</div>
 			<div class="large-9 medium-8 main-column columns">
-			$Layout
+				$Layout
 			</div>
 		</div>
 	</div>
