@@ -11,8 +11,6 @@ ul.off-canvas-list
 		height: 100%; 
 		padding: 17px 0px 6px 0px; 
 		&:hover { border-right: 2px solid #30ceda; }
-		//margin-left: 13px; 
-		border-bottom: 1px solid #f6f6f6;
 		overflow: auto;
 	}
 	
@@ -48,6 +46,15 @@ h1.title img, .title-area h1 img {
 	}
 }
 
+.tab-bar {
+	border-bottom: 1px solid $lightGray;
+	margin-bottom: 10px;
+}
+
+.top-bar .name h1 a {
+	padding: 0;
+}
+
 .name {
 	position: relative;
 	z-index: 1000;
@@ -64,8 +71,6 @@ h1.title img, .title-area h1 img {
 
 .side-nav{
 	margin-top: 10px;
-
-
 }
 
 .side-nav>li.issue-title {
@@ -74,7 +79,6 @@ h1.title img, .title-area h1 img {
 
 .side-nav>li {
 	padding: rem-calc(12);
-	border-bottom: 1px solid #F0F0F0;
 }
 
 .side-nav>li:hover{

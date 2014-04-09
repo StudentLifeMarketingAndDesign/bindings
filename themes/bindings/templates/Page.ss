@@ -86,8 +86,9 @@
 	<script src="$ThemeDir/javascript/app.js"></script>
 	
 </body>
-	<a class="exit-off-canvas"></a>
+	
 	</div>
+	<a class="exit-off-canvas"></a>
 </div><!-- end off-canvas-wrap -->
 
 </html>

@@ -7982,7 +7982,6 @@ th.hide-for-touch {
 ul.off-canvas-list .childList {
   height: 100%;
   padding: 17px 0px 6px 0px;
-  border-bottom: 1px solid #f6f6f6;
   overflow: auto;
 }
 ul.off-canvas-list .childList:hover {
@@ -8019,6 +8018,15 @@ h1.title img, .title-area h1 img {
   }
 }
 
+.tab-bar {
+  border-bottom: 1px solid #f6f6f6;
+  margin-bottom: 10px;
+}
+
+.top-bar .name h1 a {
+  padding: 0;
+}
+
 .name {
   position: relative;
   z-index: 1000;
@@ -8043,7 +8051,6 @@ h1.title img, .title-area h1 img {
 
 .side-nav > li {
   padding: 0.75rem;
-  border-bottom: 1px solid #F0F0F0;
 }
 
 .side-nav > li:hover {
