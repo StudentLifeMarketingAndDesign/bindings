@@ -8049,6 +8049,10 @@ h1.title img, .title-area h1 img {
   text-transform: uppercase;
 }
 
+.side-nav li.has-image {
+  min-height: 75px;
+}
+
 .side-nav > li {
   padding: 0.75rem;
 }

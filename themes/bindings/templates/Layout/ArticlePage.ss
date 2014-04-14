@@ -1,7 +1,7 @@
 <article>
 	<header>
 		<span class="category">Category</span>
-		<h2>$Title</h2>
+		<h1>$Title</h1>
 		<p>$Byline</p>
 	</header>
 	<img src="{$ThemeDir}/images/example-cover.jpg" class="cover" />
