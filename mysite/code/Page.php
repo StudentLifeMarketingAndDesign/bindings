@@ -52,5 +52,12 @@ class Page_Controller extends ContentController {
 		// instead of putting Requirements calls here.  However these are
 		// included so that our older themes still work
 	}
+
+	public function CurrentIssue(){
+		$homePage = RedirectorPage::get()->filter(array("URLSegment" => "home"))->First();
+		$currentIssue = $homePage->LinkTo();
+
+		return $currentIssue;
+	}
 	
 }

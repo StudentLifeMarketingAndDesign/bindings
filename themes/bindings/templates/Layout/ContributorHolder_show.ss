@@ -1,21 +1,24 @@
-<div class="container" id="content">
-
-	<div class="row no-center">
-		<div class="span8 column">
-			<% with $Contributor %>
-				<h1>$FirstName $LastName</h1>
-				$BiographicalDetails
-				<h2>Works Contributed by $LastName:</h2>
+<% with Contributor %>
+<article>
+	<header>
+		<h1>$FirstName $LastName</h1>
+		<p>$Position</p>
+	</header>
+	<div class="row content-text">
+		<div class="large-9 columns">
+			$Content
+			<p>Works Contributed by $FirstName $LastName:</p>
 				<ul>
-					<% loop ArticlePages %>
+					<% loop Articles %>
 					<li><a href="$Link">$Title</a></li>
 					<% end_loop %>
 				</ul>
-			<% end_with %>
+			$Form
 		</div>
+		<div class="large-3 columns">
 
-		<div class="span4 column sidebar">
 		</div>
 	</div>
-
-</div> <!-- /container -->
+	
+</article>
+<% end_with %>

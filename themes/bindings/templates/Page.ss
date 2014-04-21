@@ -30,7 +30,7 @@
 			<a class="left-off-canvas-toggle menu-icon"><span></span></a>
 		</section>
 		<section class="middle tab-bar-section">
-			<h1 class="title"><img src="{$ThemeDir}/images/logo.png"/></h1>
+			<h1 class="title"><a href="{$BaseHref}"><img src="{$ThemeDir}/images/logo.png"/></a></h1>
 		</section>
 	</nav>
 	<aside class="left-off-canvas-menu show-for-small">
@@ -88,7 +88,7 @@
 </body>
 	
 	</div>
-	<a class="exit-off-canvas"></a>
+	<!--<a class="exit-off-canvas"></a>-->
 </div><!-- end off-canvas-wrap -->
 
 </html>

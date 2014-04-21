@@ -1,5 +1,5 @@
 <?php
-class ContributorHolder extends Page {
+class ContributorHolderPage extends Page {
 
 	private static $db = array(
 		);
@@ -15,7 +15,7 @@ class ContributorHolder extends Page {
 		}
 }
 
-class ContributorHolder_controller extends Page_Controller {
+class ContributorHolderPage_controller extends Page_Controller {
 	private static $allowed_actions = array ("show");
 	
 	public function show(){

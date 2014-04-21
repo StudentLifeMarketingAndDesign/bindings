@@ -5,7 +5,7 @@ class Contributor extends DataObject {
     	'FirstName' => 'Varchar(255)',
     	'LastName' => 'Varchar(255)',
     	'Position' => 'Varchar(255)',
-        'BiographicalDetails' => 'HTMLText'
+        'Content' => 'HTMLText'
     );
 
     private static $has_one = array( 
@@ -16,8 +16,10 @@ class Contributor extends DataObject {
     	'Articles' => 'ArticlePage'
     );
 
+    private static $summary_fields = array ("FirstName", "LastName", "Position");
+
     public function Link(){
-        $contributorPage = ContributorPage::get()->First();
+        $contributorPage = ContributorHolderPage::get()->First();
         if($contributorPage){
             return $contributorPage->Link().'show/'.$this->ID;
         }
@@ -26,15 +28,10 @@ class Contributor extends DataObject {
     public function getCMSFields() {
         $fields = parent::getCMSFields();
 
-        $fields->removeByName('Content');
-        $fields->removeByName('Metadata');
-        $fields->removeByName('Image');
-        $fields->removeByName('Articles');
-
-        $fields->addFieldToTab('Root.Main', new TextField('FirstName', 'First Name'));
+  /*      $fields->addFieldToTab('Root.Main', new TextField('FirstName', 'First Name'));
         $fields->addFieldToTab('Root.Main', new TextField('LastName', 'Last Name'));
         $fields->addFieldToTab('Root.Main', new TextField('Position', 'Position'));
-        $fields->addFieldToTab('Root.Main', new HTMLEditorField('BiographicalDetails', 'Biographical Details'));
+        $fields->addFieldToTab('Root.Main', new HTMLEditorField('Content', 'Biographical Details'));*/
 
         return $fields;
     }

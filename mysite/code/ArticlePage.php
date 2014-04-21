@@ -3,7 +3,8 @@ class ArticlePage extends Page {
 
 	private static $db = array(
 		"Subheader" => "Text",
-		"Byline" => "Text"
+		"SecondaryContent" => "HTMLText",
+		"PhotoCaption" => "HTMLText"
 	);
 
 	private static $has_one = array(
@@ -17,21 +18,20 @@ class ArticlePage extends Page {
     private static $many_many_extraFields=array();
     
     private static $allowed_children = array();
-    //private static $can_be_root = false;
+    
+    private static $can_be_root = false;
 
 	private static $defaults = array ();
 
 	public function getCMSFields(){
-		$f = parent::getCMSFields();
-
-		$f->addFieldToTab("Root.Main", new TextField("Subheader"), "Content");
-		$f->addFieldToTab("Root.Main", new TextField("Byline"), "Content");
-		$f->addFieldToTab("Root.Main", new UploadField("CoverImage", "Cover Image"), "Content");
-		
 		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
 		$newGridField = new GridField('Contributors', 'Contributors', $this->Contributors(), $gridFieldConfig);
-		$f->addFieldToTab('Root.Contributors', $newGridField);
 		
+		$f = parent::getCMSFields();
+		$f->addFieldToTab("Root.Main", new TextField("Subheader"), "Content");
+		$f->addFieldToTab("Root.Main", new UploadField("CoverImage", "Cover Image"), "Content");
+		$f->addFieldToTab('Root.Main', $newGridField, 'Content');
+		$f->addFieldToTab('Root.Main', new HTMLEditorField('SecondaryContent', 'Secondary Content (sidebar)'));
 		return $f;
 	}
 
