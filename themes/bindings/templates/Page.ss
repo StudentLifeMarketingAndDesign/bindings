@@ -59,19 +59,21 @@
 	<nav role="navigation">
 		<div class="row">
 			<div class="large-12 columns">
-				<% include Breadcrumbs %>
+				<!--<% include Breadcrumbs %>-->
 			</div>
 		</div>
 	</nav>
-
+	
+	<!--
 	<footer class="footer" role="contentinfo">
 		<div class="row">
 			<div class="large-12 columns">
 				<p>&copy; $Now.Year $SiteConfig.Title</p>
 			</div>
 		</div>
-	</footer>
-	
+	</footer> 
+	-->
+	<% include Footer %>
 
 	<%--Login Modal--%>
 	<div id="login-form-modal" class="reveal-modal medium" data-reveal>
@@ -84,7 +86,7 @@
 	<script src="$ThemeDir/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="$ThemeDir/bower_components/foundation/js/foundation.min.js"></script>
 	<script src="$ThemeDir/javascript/app.js"></script>
-	
+	<script src="division-bar/js/division-bar.js"></script>
 </body>
 	
 	</div>

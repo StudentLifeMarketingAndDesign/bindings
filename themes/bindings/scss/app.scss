@@ -1,5 +1,11 @@
-@import "settings";
+@import "imports/settings";
 @import "foundation";
+@import "imports/footer/config";
+@import "imports/footer/mixins";
+@import "imports/footer/footer";
+@import "imports/footer/grid-simple";
+
+
 .clearfix{
 	clear: both;
 }

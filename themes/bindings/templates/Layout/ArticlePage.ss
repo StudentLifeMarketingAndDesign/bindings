@@ -4,7 +4,10 @@
 		<h1>$Title</h1>
 		<% include Byline %>
 	</header>
-	<img src="{$ThemeDir}/images/example-cover.jpg" class="cover" />
+	<% if $CoverImage %>
+		<img src="$CoverImage.URL" class="cover" />
+	<% end_if %>
+	<p> $PhotoCaption </p>
 	<div class="row">
 		<div class="large-9 columns">
 			<div class="content-text">

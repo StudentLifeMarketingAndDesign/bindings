@@ -28,6 +28,7 @@ class ArticlePage extends Page {
 		$newGridField = new GridField('Contributors', 'Contributors', $this->Contributors(), $gridFieldConfig);
 		
 		$f = parent::getCMSFields();
+		$f->addFieldToTab("Root.Main", new TextField("PhotoCaption", "Photo Caption"),"Content");
 		$f->addFieldToTab("Root.Main", new TextField("Subheader"), "Content");
 		$f->addFieldToTab("Root.Main", new UploadField("CoverImage", "Cover Image"), "Content");
 		$f->addFieldToTab('Root.Main', $newGridField, 'Content');
