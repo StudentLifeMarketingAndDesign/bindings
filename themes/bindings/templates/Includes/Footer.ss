@@ -3,7 +3,7 @@
     <div class="row ">
         <div class="colgroup large-12 ">
 			<div class="col-1-2">
-				<a href="http://studentlife.uiowa.edu" class="hide-print"><img src="$ThemeDir/images/dosl-uiowa.png" alt="Division Of Student Life" style="margin-top: -20px;"></a><br>
+				<a href="http://studentlife.uiowa.edu" class="hide-print"><img src="$ThemeDir/images/UILib-stackedBlack-01.png" alt="Division Of Student Life" style="margin-top: -20px;"></a><br>
 				<% if $SiteConfig.GroupSummary %>
 					<p>$SiteConfig.GroupSummary</p>
 				<% else %>
