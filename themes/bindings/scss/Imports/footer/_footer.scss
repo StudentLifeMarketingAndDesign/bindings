@@ -8,10 +8,6 @@ $break-xlarge: 1140px; /* 1140px / 16px; */
  
 .footer {
 	background: #f6f6f6;
-	border-top: 2px solid #28acb6;
-	-webkit-box-shadow: inset 0 1px 0 #2e2e2e;
-	-moz-box-shadow: inset 0 1px 0 #2e2e2e;
-	box-shadow: inset 0 1px 0 #2e2e2e;
 	color: #222;
 	padding: 3em 0 1em;
 	position: relative;
@@ -59,7 +55,7 @@ $break-xlarge: 1140px; /* 1140px / 16px; */
 		border-left-color: #28acb6;
 	}
 	@media screen and (min-width: $break-small) {
-		border-left: 1px solid rgba(0, 0, 0, 0.26);
+		border-left: 1px solid white;
 		font-size: rem-calc(13);
 		padding: 5px 0 5px 10px;
 	}

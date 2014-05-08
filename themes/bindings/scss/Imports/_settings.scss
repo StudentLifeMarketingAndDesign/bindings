@@ -9,7 +9,7 @@ $primary-color: #28acb6;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 $gray: #333;
-$lightGray: #F6F6F6;
+$lightGray: #F8f8f8;
 
 // Foundation by ZURB
 // foundation.zurb.com
@@ -48,7 +48,7 @@ $lightGray: #F6F6F6;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
- $row-width: rem-calc(1400);
+ $row-width: 1240px;
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
@@ -412,7 +412,7 @@ $lightGray: #F6F6F6;
 
 // We use these to style the triangle pip.
 // $f-dropdown-triangle-size: 6px;
-// $f-dropdown-triangle-color: #fff;
+ $f-dropdown-triangle-color: $primary-color;
 // $f-dropdown-triangle-side-offset: 10px;
 
 // We use these to control styles for the list elements.
@@ -432,7 +432,7 @@ $lightGray: #F6F6F6;
 // $include-html-button-classes: $include-html-classes;
 
 // We use these to set the color of the pip in dropdown buttons
-// $dropdown-button-pip-color: #fff;
+ $dropdown-button-pip-color: #333;
 // $dropdown-button-pip-color-alt: #333;
 
 // $button-pip-tny: rem-calc(6);
@@ -1136,7 +1136,7 @@ $off-canvas-overlay-box-shadow: none;
 
 // Background color for the top bar
 // $topbar-bg-color: #fff;
- $topbar-bg: none;
+ $topbar-bg: $lightGray;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -1152,7 +1152,7 @@ $off-canvas-overlay-box-shadow: none;
  $topbar-dropdown-link-bg: darken($lightGray, 3);
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: #fff;
+ $topbar-dropdown-toggle-color: #666;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav

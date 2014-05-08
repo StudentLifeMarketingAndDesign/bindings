@@ -66,5 +66,14 @@ class ArticlePage_Controller extends Page_Controller {
 		// instead of putting Requirements calls here.  However these are
 		// included so that our older themes still work
 	}
-	
+
+	public function NextPage() {
+
+		$page = Page::get()->filter( array (
+				'ParentID' => $this->ParentID,
+				'Sort:GreaterThan' => $this->Sort
+			) )->First();
+		
+		return $page;
+	}
 }

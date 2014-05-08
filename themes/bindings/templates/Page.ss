@@ -34,7 +34,7 @@
 		</section>
 	</nav>
 	<aside class="left-off-canvas-menu show-for-small">
-			<ul class="off-canvas-list">
+			<ul class="off-canvas-list side-nav">
 			    <% with $CurrentIssue %>     
 				   <% if $Children%>
 					        <% loop $Children %> 
@@ -47,46 +47,20 @@
 
 	<div class="main typography" role="main">
 		<div class="row content">
-			<div class="large-3 medium-4 side-nav-column large-uncentered columns hide-for-small">
-				<% include SideNav %>
-			</div>
-			<div class="large-9 medium-8 main-column columns">
-				$Layout
+			<div class="large-12 large-centered">
+				<div class="large-3 medium-4 side-nav-column large-uncentered columns hide-for-small">
+					<% include SideNav %>
+				</div>
+				<div class="large-9 medium-8 main-column columns">
+					$Layout
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<nav role="navigation">
-		<div class="row">
-			<div class="large-12 columns">
-				<!--<% include Breadcrumbs %>-->
-			</div>
-		</div>
-	</nav>
-	
-	<!--
-	<footer class="footer" role="contentinfo">
-		<div class="row">
-			<div class="large-12 columns">
-				<p>&copy; $Now.Year $SiteConfig.Title</p>
-			</div>
-		</div>
-	</footer> 
-	-->
 	<% include Footer %>
-
-	<%--Login Modal--%>
-	<div id="login-form-modal" class="reveal-modal medium" data-reveal>
-		<h2>Login</h2>
-		$LoginForm
-		<a class="close-reveal-modal">&#215;</a>
-	</div>
-
-	<%--See [Requirements](http://doc.silverstripe.org/framework/en/reference/requirements) for loading from controller--%>
-	<script src="$ThemeDir/bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="$ThemeDir/bower_components/foundation/js/foundation.min.js"></script>
-	<script src="$ThemeDir/javascript/app.js"></script>
-	<script src="division-bar/js/division-bar.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="$ThemeDir/build/build.js"></script>
 </body>
 	
 	</div>

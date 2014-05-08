@@ -2,7 +2,12 @@
 @import "foundation";
 @import "imports/footer/config";
 @import "imports/footer/mixins";
+
+@import "imports/header";
+@import "imports/side-nav";
+@import "imports/off-canvas-nav";
 @import "imports/footer/footer";
+
 @import "imports/footer/grid-simple";
 
 
@@ -11,60 +16,6 @@
 }
 .main {
 	min-height: 320px;
-}
-
-ul.off-canvas-list 
-{
-	.childList {
-		height: 100%; 
-		padding: 17px 0px 6px 0px; 
-		&:hover, .active { border-right: 2px solid #30ceda; }
-		overflow: auto;
-	}	
-}
-
-.childList {
-	img {
-		float: left;
-		margin: 0 10px 0 0px;
-		vertical-align:middle
-	}
-}
-
-ul.off-canvas-list li a {
-	padding: 0;
-	margin-top: -5px; 
-	&:hover {
-		background: none; 
-	}
-}
-ul.off-canvas-list li p {
-	font-size: 10px;
-	color: #888888; 
-	margin-top: -5px;
-}
-
-h1.title img, .title-area h1 img {
-	height: 30px;
-	@media #{$medium-up} {
-		height: 45px;
-		margin-top: 6px;
-	}
-}
-
-.tab-bar {
-	border-bottom: 1px solid $lightGray;
-	margin-bottom: 10px;
-}
-
-.top-bar .name h1 a {
-	padding: 0;
-}
-
-.top-bar {
-	@media #{$medium-up} {
-		border-bottom: 1px solid #eee;
-	}
 }
 
 .name {
@@ -77,62 +28,6 @@ h1.title img, .title-area h1 img {
 
 }
 
-.move-right .exit-off-canvas{
-	box-shadow: none;
-}
-
-.side-nav{
-
-}
-
-.side-nav>li.issue-title {
-	text-transform: uppercase;
-}
-
-.side-nav li.has-image {
-	min-height: 75px;
-}
-
-.side-nav>li {
-	padding: rem-calc(12);
-	line-height: 17px;
-}
-
-.side-nav>li:hover, .side-nav>li.active{
-	border-right: 2px solid $primary-color;
-	background: $lightGray;
-}
-
-.side-nav>li a{
-
-}
-
-.side-nav>li p {
-	color: #646464;
-	font-size: rem-calc(11);
-
-	a:not(.button){
-		color: $primary-color;
-		display: inline;
-	}
-}
-
-.side-nav-column {
-	@media #{$medium-up} {
-		@include grid-column(
-			$collapse: true
-		);
-	};
-} 
-
-
-
-.nav-column{
-	@include grid-column(
-		$collapse:true
-	);
-}
-
 
 .main-column{
 	@media #{$medium-up} {
@@ -140,11 +35,6 @@ h1.title img, .title-area h1 img {
 			$collapse: true
 		);	
 	}
-}
-
-.row.content {
-	margin-left: 0;
-	margin-right: 0;
 }
 
 article {
@@ -169,7 +59,7 @@ article header {
 
 	}
 }
- 
+
 .category{
 	text-transform: uppercase;
 	display: block;

@@ -1,0 +1,24 @@
+
+
+h1.title img, .title-area h1 img {
+	height: 30px;
+	@media #{$medium-up} {
+		height: 45px;
+		margin-top: 6px;
+	}
+}
+
+.tab-bar {
+	border-bottom: 1px solid $lightGray;
+	margin-bottom: 10px;
+}
+
+.top-bar .name h1 a {
+	padding: 0;
+}
+
+.top-bar {
+	@media #{$medium-up} {
+		
+	}
+}

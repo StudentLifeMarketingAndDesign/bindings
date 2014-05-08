@@ -1,0 +1,58 @@
+.side-nav-column {
+	@media #{$medium-up} {
+		@include grid-column(
+			$collapse: true
+		);
+	};
+} 
+
+.side-nav{
+	
+	a{
+		padding: 10px 0;
+		color: #646464;
+
+	}
+	p{
+		line-height: 1;
+
+	}
+	h3{
+		font-size: rem-calc(18);
+		line-height: 1;
+	}
+	p, span, h3{
+		@media #{$medium-up} {
+			margin-left: 25%;
+		}
+	}
+	.cover-preview {
+		display: none;
+		@media #{$medium-up} {
+			display: block;
+			width: 20%;
+			float: left;
+			margin-top: 5px;
+		}
+	}
+	.byline{
+		font-size: rem-calc(12);
+	}
+
+	li{
+
+		border-bottom: 1px solid #EBEBEB;
+
+	}
+
+	li a:hover, .side-nav>li.active a{
+		border-right: 2px solid $primary-color;
+		background: $lightGray;
+	}
+	li:after{
+		clear: both;
+	}
+}
+.side-nav>li.issue-title {
+	text-transform: uppercase;
+}

@@ -5,8 +5,10 @@
 		<% include Byline %>
 	</header>
 	<% if $CoverImage %>
-		<img src="$CoverImage.URL" class="cover" />
+		<%--<img src="$CoverImage.URL" class="cover" /> --%>
+
 	<% end_if %>
+	<img src="http://lorempixel.com/1024/700/" class="cover" />
 	<p> $PhotoCaption </p>
 	<div class="row">
 		<div class="large-9 columns">
@@ -18,7 +20,7 @@
 		<div class="large-3 columns">
 			$SecondaryContent
 		</div>
-
+		$Next
 	</div>
-	$Form
+
 </article>

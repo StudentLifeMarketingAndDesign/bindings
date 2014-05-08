@@ -1,4 +1,4 @@
-
+<div class="contain-to-grid">
 	<nav class="top-bar hide-for-small" role="navigation" data-topbar>
 		<ul class="title-area">
 			<li class="name">
@@ -52,3 +52,4 @@
 			</ul>
 		</section>
 	</nav>
+</div>

@@ -23,6 +23,7 @@ class ContributorHolderPage_controller extends Page_Controller {
 		if ($contributorID){
 			$contributor = Contributor::get_by_id("Contributor", $contributorID); 
 			$Data = array(
+				'Title' => $contributor->FirstName.' '.$contributor->LastName,
 				'Contributor' => $contributor,
 				);
 
