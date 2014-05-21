@@ -1,5 +1,5 @@
-<div class="contain-to-grid">
-	<nav class="top-bar hide-for-small" role="navigation" data-topbar>
+<div class="contain-to-grid sticky hide-for-small">
+	<nav class="top-bar" role="navigation" data-topbar data-options="sticky_on: medium">
 		<ul class="title-area">
 			<li class="name">
 				<h1><a href="$BaseHref"><img src="{$ThemeDir}/images/logo.png"/><span class="category">Spring 2014</span></a></h1>

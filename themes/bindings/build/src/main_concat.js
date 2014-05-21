@@ -1,5 +1,5 @@
 /*!
- * Modernizr v2.7.2
+ * Modernizr v2.8.1
  * www.modernizr.com
  *
  * Copyright (c) Faruk Ates, Paul Irish, Alex Sexton
@@ -24,7 +24,7 @@
 
 window.Modernizr = (function( window, document, undefined ) {
 
-    var version = '2.7.2',
+    var version = '2.8.1',
 
     Modernizr = {},
 
@@ -156,7 +156,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
       var matchMedia = window.matchMedia || window.msMatchMedia;
       if ( matchMedia ) {
-        return matchMedia(mq).matches;
+        return matchMedia(mq) && matchMedia(mq).matches || false;
       }
 
       var bool;
@@ -1411,8 +1411,6 @@ c.compute_dimensions()}else a.S("[data-orbit]",a.scope).each(function(b,c){var d
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
-
-// trigger for joyride demo in KitchenSink demo
-$('#start-jr').on('click', function() {
-	$(document).foundation('joyride','start');
+$(window).resize(function() {
+    if(window.innerWidth > 585) { $(".off-canvas-wrap").removeClass("move-right"); }
 });

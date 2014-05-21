@@ -5,11 +5,13 @@
 
 @import "imports/header";
 @import "imports/side-nav";
-@import "imports/off-canvas-nav";
 @import "imports/footer/footer";
 
 @import "imports/footer/grid-simple";
 
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+}
 
 .clearfix{
 	clear: both;
@@ -37,27 +39,47 @@
 	}
 }
 
+.top-bar-section li.active:not(.has-form) a:not(.button),
+.top-bar-section ul li.active>a,
+.top-bar-section ul li:hover>a
+{
+	border-bottom: 2px solid #ddd;
+}
+
+.content {
+	margin-bottom: 30px;
+}
+
 article {
-	@media #{$medium-up} {
-		padding-top: 20px;
+	padding-top: 10px;
+	header {
+		font-family: $header-font-family;
+		@media #{$medium-up} {
+			padding-left: 20px
+
+		}
 	}
+	.article-text, .content-text {
+		@media #{$medium-up} {
+			padding-left: 20px;
+		}
+	}
+	.content-text *{
+		font-size: rem-calc(18);
+	}
+
+	img.cover {
+		margin-bottom: 20px;
+	}
+
 }
 
-article .article-text, article .content-text {
-	@media #{$medium-up} {
-		max-width: 600px;
-		padding-left: 20px;
-	}
-}
 
-article img.cover {
-	margin-bottom: 20px;
-}
-article header {
-	@media #{$medium-up} {
-		padding-left: 20px
-
-	}
+.byline{
+	font-size: rem-calc(14);
+	line-height: 1;
+	color: #666;
+	font-style: italic;
 }
 
 .category{
@@ -65,4 +87,4 @@ article header {
 	display: block;
 	color: $primary-color;
 	font-size: rem-calc(10);
-}
+} 

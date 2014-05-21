@@ -7,13 +7,15 @@ module.exports = function(grunt) {
     
     //compile the sass
 
-    compass: {
-      dist: {                   // Target
+    sass: {
+      dist: { 
+        files: {
+          'themes/bindings/css/app.css' : 'themes/bindings/scss/app.scss'
+        },                  // Target
         options: {              // Target options
-          sassDir: ['scss'],
-          cssDir: 'css',
-          environment: 'production',
-          outputStyle: 'compressed'
+          style: 'compressed',
+          sourcemap: 'true',
+          loadPath: ['themes/bindings/bower_components/foundation/scss']
         }
       }
     },
@@ -23,12 +25,11 @@ module.exports = function(grunt) {
     concat: {
       js:{
         src: [
-          'bower_components/modernizr/modernizr.js',
-          'bower_components/foundation/js/foundation.min.js',
-          '../../division-bar/js/division-bar.js',
-          'javascript/*.js'
+          'themes/bindings/bower_components/modernizr/modernizr.js',
+          'themes/bindings/bower_components/foundation/js/foundation.min.js',
+          'themes/bindings/javascript/*.js'
         ],
-        dest: 'build/src/main_concat.js'
+        dest: 'themes/bindings/build/src/main_concat.js'
       }
     },
 
@@ -38,24 +39,24 @@ module.exports = function(grunt) {
     uglify: {
       my_target:{
         files:{
-        'build/build.js': ['build/src/main_concat.js'],
+        'themes/bindings/build/build.js': ['themes/bindings/build/src/main_concat.js'],
         }
       }
     },
 
     watch: {
       scripts: {
-        files: ['js/*.js', 'js/**/*.js'],
+        files: ['themes/bindings/javascript/*.js', 'themes/bindings/javascript/**/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
           spawn: true,
         }
       },
       css: {
-        files: ['scss/*.scss', 
-                'scss/**/*.scss'
+        files: ['themes/bindings/scss/*.scss', 
+                'themes/bindings/scss/**/*.scss'
                 ],
-        tasks: ['compass'],
+        tasks: ['sass'],
         options: {
           spawn: true,
         }
@@ -67,13 +68,13 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-simple-watch');
+  //grunt.loadNpmTasks('grunt-simple-watch');
 
   // Default task(s).
   // Note: order of tasks is very important
-  grunt.registerTask('default', ['compass', 'concat', 'uglify', 'simple-watch']);
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
 
 };

@@ -19,39 +19,24 @@
 	<link rel="icon" type="image/png" href="$ThemeDir/favicon.ico" />
 	<%--See [Requirements](http://doc.silverstripe.org/framework/en/reference/requirements) for loading from controller--%>
 	<link rel="stylesheet" href="$ThemeDir/css/app.css" />
+	<script type="text/javascript" src="//use.typekit.net/yxj2cnc.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script src="$ThemeDir/bower_components/modernizr/modernizr.js"></script>
 </head>
 <body class="$ClassName.ATT">
 <div class="off-canvas-wrap">
 	<div class="inner-wrap">
-	<% include TopBar %>	
-	<nav class="tab-bar show-for-small">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon"><span></span></a>
-		</section>
-		<section class="middle tab-bar-section">
-			<h1 class="title"><a href="{$BaseHref}"><img src="{$ThemeDir}/images/logo.png"/></a></h1>
-		</section>
-	</nav>
-	<aside class="left-off-canvas-menu show-for-small">
-			<ul class="off-canvas-list side-nav">
-			    <% with $CurrentIssue %>     
-				   <% if $Children%>
-					        <% loop $Children %> 
-								<% include SideNavMenuItem %>
-					        <% end_loop %> 
-				    <% end_if %> 
-			    <% end_with %>
-			</ul>
-	</aside>	
+	<% include TopBar %>
+	<% include SmallTabBar %>
 
+	<% include OffCanvasSideNav %>	
 	<div class="main typography" role="main">
 		<div class="row content">
 			<div class="large-12 large-centered">
-				<div class="large-3 medium-4 side-nav-column large-uncentered columns hide-for-small">
+				<div class="large-4 medium-4 side-nav-column large-uncentered columns hide-for-small">
 					<% include SideNav %>
 				</div>
-				<div class="large-9 medium-8 main-column columns">
+				<div class="large-8 medium-8 main-column columns">
 					$Layout
 				</div>
 			</div>
@@ -61,10 +46,10 @@
 	<% include Footer %>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script src="$ThemeDir/build/build.js"></script>
-</body>
-	
+
+	<a class="exit-off-canvas"></a>
 	</div>
 	<!--<a class="exit-off-canvas"></a>-->
 </div><!-- end off-canvas-wrap -->
-
+</body>
 </html>
