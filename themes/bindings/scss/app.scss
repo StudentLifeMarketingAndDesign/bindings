@@ -9,82 +9,84 @@
 
 @import "imports/footer/grid-simple";
 
-h1, h2, h3, h4, h5, h6{
-	text-transform: uppercase;
+.full-width {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
 }
 
-.clearfix{
-	clear: both;
+h1, h2, h3, h4, h5, h6 {
+
 }
+
+.clearfix {
+    clear: both;
+}
+
 .main {
-	min-height: 320px;
+    min-height: 320px;
 }
 
 .name {
-	position: relative;
-	z-index: 1000;
+    position: relative;
+    z-index: 1000;
 }
+
 .name .category {
-	display: inline-block;
-	margin-left: 8px;
-
+    display: inline-block;
+    margin-left: 8px;
 }
 
-
-.main-column{
-	@media #{$medium-up} {
-		@include grid-column(
-			$collapse: true
-		);	
-	}
+.main-column {
+    @media #{$medium-up} {
+        @include grid-column($collapse: true);
+    }
 }
-
-.top-bar-section li.active:not(.has-form) a:not(.button),
-.top-bar-section ul li.active>a,
-.top-bar-section ul li:hover>a
-{
-	border-bottom: 2px solid #ddd;
-}
-
-.content {
-	margin-bottom: 30px;
+/* Content padding so it doesn't run up against the sidenav  */
+article header, article .article-text, article .content-text, .footer {
+    @media #{$medium-up} {
+        padding-left: 20px;
+    }
+    @media #{$large-up} {
+        padding-left: 40px;
+    }
+    @media #{$xlarge-up} {
+        padding-left: 60px;
+    }
 }
 
 article {
-	padding-top: 10px;
-	header {
-		font-family: $header-font-family;
-		@media #{$medium-up} {
-			padding-left: 20px
-
-		}
-	}
-	.article-text, .content-text {
-		@media #{$medium-up} {
-			padding-left: 20px;
-		}
-	}
-	.content-text *{
-		font-size: rem-calc(18);
-	}
-
-	img.cover {
-		margin-bottom: 20px;
-	}
-
+    padding-top: 10px;
+    header {
+        font-family: $header-font-family;
+        small {
+            display: block;
+            padding: 0.1em 0;
+            line-height: 1;
+        }
+    }
+    .article-text, .content-text {
+        max-width: 1024px;
+    }
+    .content-text * {
+        font-size: rem-calc(18);
+    }
+    img.cover {
+        margin-bottom: 20px;
+    }
 }
 
-
-.byline{
-	font-size: rem-calc(14);
-	line-height: 1;
-	color: #666;
-	font-style: italic;
+.byline {
+    font-size: rem-calc(14);
+    line-height: 1;
+    color: #666;
+    font-style: italic;
 }
 
-.category{
-	text-transform: uppercase;
-	display: block;
-	color: $primary-color;
-	font-size: rem-calc(10);
-} 
+.category {
+    text-transform: uppercase;
+    display: block;
+    color: $primary-color;
+    font-size: rem-calc(10);
+}

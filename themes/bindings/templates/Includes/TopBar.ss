@@ -1,4 +1,4 @@
-<div class="contain-to-grid sticky hide-for-small">
+<div class="sticky show-for-large-up nav-container">
 	<nav class="top-bar" role="navigation" data-topbar data-options="sticky_on: medium">
 		<ul class="title-area">
 			<li class="name">

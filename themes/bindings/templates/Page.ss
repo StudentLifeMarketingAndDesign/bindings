@@ -31,19 +31,18 @@
 
 	<% include OffCanvasSideNav %>	
 	<div class="main typography" role="main">
-		<div class="row content">
-			<div class="large-12 large-centered">
-				<div class="large-4 medium-4 side-nav-column large-uncentered columns hide-for-small">
+		<div class="content row full-width">
+				<div class="xxlarge-2 xlarge-3 large-4 side-nav-column large-uncentered columns show-for-large-up">
 					<% include SideNav %>
 				</div>
-				<div class="large-8 medium-8 main-column columns">
+				<div class="xxlarge-10 xlarge-9 large-8 main-column columns">
 					$Layout
+				<% include Footer %>
 				</div>
-			</div>
 		</div>
 	</div>
 
-	<% include Footer %>
+	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script src="$ThemeDir/build/build.js"></script>
 

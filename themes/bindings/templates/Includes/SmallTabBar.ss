@@ -1,4 +1,4 @@
-<nav class="tab-bar show-for-small">
+<nav class="tab-bar show-for-small-up hide-for-large-up">
 	<section class="left-small">
 		<a class="left-off-canvas-toggle menu-icon"><span></span></a>
 	</section>

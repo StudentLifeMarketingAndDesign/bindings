@@ -1,4 +1,4 @@
-<aside class="left-off-canvas-menu show-for-small">
+<aside class="left-off-canvas-menu show-for-small-up hide-for-large-up">
 		<ul class="off-canvas-list side-nav">
 		    <% with $CurrentIssue %>     
 			   <% if $Children%>
