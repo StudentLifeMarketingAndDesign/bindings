@@ -2,7 +2,7 @@
 	<nav class="top-bar" role="navigation" data-topbar data-options="sticky_on: medium">
 		<ul class="title-area">
 			<li class="name">
-				<h1><a href="$BaseHref"><img src="{$ThemeDir}/images/logo.png"/><span class="category">Spring 2014</span></a></h1>
+				<h1><a href="$BaseHref"><img src="{$ThemeDir}/images/logo.png"/><span class="category">$CurrentIssue.Title</span></a></h1>
 			</li>
 			<li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
 		</ul>

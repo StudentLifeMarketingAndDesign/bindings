@@ -68,6 +68,7 @@ article {
     }
     .article-text, .content-text {
         max-width: 1024px;
+        min-height: 300px;
     }
     .content-text * {
         font-size: rem-calc(18);

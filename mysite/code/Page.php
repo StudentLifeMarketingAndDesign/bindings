@@ -53,10 +53,27 @@ class Page_Controller extends ContentController {
 		// included so that our older themes still work
 	}
 
+	public function TableOfContents(){
+
+		return $this->CurrentIssue()->Children();
+	}
+
 	public function CurrentIssue(){
+		if($this->ClassName == 'Issue'){
+			return $this;
+		// Else if we're on an article page, get the parent (Issue)'s children
+		}elseif($this->ClassName == 'ArticlePage'){
+			$parent = $this->getParent();
+			return $parent;
+		// Otherwise, we're on an interior page, so let's just get the latest Issue's Children.
+		}else{
+			return $this->LatestIssue();
+		}		
+	}
+
+	public function LatestIssue(){
 		$homePage = RedirectorPage::get()->filter(array("URLSegment" => "home"))->First();
 		$currentIssue = $homePage->LinkTo();
-
 		return $currentIssue;
 	}
 	

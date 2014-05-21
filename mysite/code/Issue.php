@@ -1,7 +1,8 @@
 <?php
 class Issue extends Page {
 
-	private static $db = array();
+	private static $db = array(
+	);
 
 	private static $has_one = array();
 	private static $has_many = array();
@@ -17,10 +18,6 @@ class Issue extends Page {
 		$f = parent::getCMSFields();
 		
 		return $f;
-	}
-
-	public function CurrentIssue(){
-		return $this;
 	}
 	
 }
