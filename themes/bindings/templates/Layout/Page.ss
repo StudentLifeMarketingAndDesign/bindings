@@ -13,5 +13,4 @@
 			$SecondaryContent
 		</div>
 	</div>
-	
 </article>

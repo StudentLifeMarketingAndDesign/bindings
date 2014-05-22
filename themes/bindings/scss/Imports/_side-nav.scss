@@ -10,7 +10,7 @@
 	};
 } 
 
-.side-nav{
+.side-nav, ul.off-canvas-list {
 	padding: 10px;
 
 	h3 small{
@@ -23,7 +23,10 @@
 	}
 
 	li{
-		border-bottom: 1px solid #eee
+		border-bottom: 1px solid #eee;
+		a{
+			transition: none;
+		}
 	}
 	:last-child{
 		border-bottom: 0;
@@ -55,7 +58,7 @@
 		font-size: rem-calc(12);
 		margin-bottom: 0;
 	}
-	a:hover, li.active a{
+	li a:hover, li.active a{
 		background-color: #fff;
 		background-image: url('../images/sidenav-active.png');
 		background-position: 100% 0;
@@ -68,7 +71,8 @@
 			background-color: #9B9B9B;
 		}
 		a{
-			padding: 5px 15px;
+			padding: 10px;
+
 		}
 		.category{
 			display: inline;
@@ -79,7 +83,7 @@
 		h1{
 			margin: 0;
 			margin-top: -20px;
-			text-align: center;
+			text-align:center;
 		}
 		h1 img {
 			height: 30px;
@@ -106,7 +110,7 @@ ul.off-canvas-list
 	li a {
 		padding: 10px;
 		&:hover {
-			background: none; 
+			background-color: white;
 		}
 	}
 

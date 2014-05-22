@@ -1,25 +1,41 @@
-h1.title img, .title-area h1 img {
-	height: 30px;
-	@media #{$medium-up} {
-		height: 30px;
-		margin-top: 6px;
-		padding-left: 20px;
+.top-bar {
+	img.uiowa-logo{
+		opacity: 0.7;
+		height: 13px;
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
 
-.tab-bar, .nav-container {
-	border-bottom: 1px solid $lightGray;
-}
-
-.tab-bar h1{
-	text-align: center;
-}
 .top-bar .name h1 a {
 	padding: 0;
 }
 
-.top-bar {
-	@media #{$medium-up} {
-		
+.top-bar input{
+	font-family: $header-font-family;
+	font-size: 0.6em;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-transition: width 0.2s ease, background-color 0.2s ease;
+	-moz-transition: width 0.2s ease, background-color 0.2s ease;
+	transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+
+.tab-bar {
+	border-bottom: 1px solid $lightGray;
+	h1{
+		text-align: center;
+	}
+	h1.title img, .title-area h1 img {
+		height: 30px;
+		@media #{$medium-up} {
+			height: 35px;
+		}
 	}
 }
+
+
+

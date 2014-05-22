@@ -61,7 +61,13 @@ article header, article .article-text, article .content-text, .footer {
 }
 
 article {
-    padding-top: 10px;
+	padding-top: 10px;
+	@media #{$medium-up}{
+		padding-top: 20px;
+	}
+    @media #{$large-up}{
+    	padding-top: 35px;
+    }
     max-width: 1024px;
     header {
         font-family: $header-font-family;
