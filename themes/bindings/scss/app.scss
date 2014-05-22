@@ -16,6 +16,10 @@
     max-width: initial;
 }
 
+h1{
+	font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6 {
 
 }
@@ -58,9 +62,15 @@ article header, article .article-text, article .content-text, .footer {
 
 article {
     padding-top: 10px;
+    max-width: 1024px;
     header {
         font-family: $header-font-family;
+        h1{
+        	text-transform: uppercase;
+        }
         small {
+        	font-weight: normal;
+        	text-transform: none;
             display: block;
             padding: 0.1em 0;
             line-height: 1;

@@ -1,3 +1,5 @@
 <ul class="side-nav nav-grid">
-		<% include SideNavMenuItems %>
+	<% loop $TableOfContents %>
+		<% include SideNavMenuItem %>
+	<% end_loop %>
 </ul>

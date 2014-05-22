@@ -2,16 +2,11 @@
 <footer class="footer clearfix" role="contentinfo">
     <div class="row">
         <div class="large-4 columns">
-				<a href="http://studentlife.uiowa.edu" class="hide-print"><img src="$ThemeDir/images/UILib-stackedBlack-01.png" alt="Division Of Student Life" style="margin-top: -20px;"></a><br>
-				<% if $SiteConfig.GroupSummary %>
-					<p>$SiteConfig.GroupSummary</p>
-				<% else %>
+				<a href="http://studentlife.uiowa.edu" class="hide-print logo"><img src="$ThemeDir/images/UILib-stackedBlack-01.png" alt="Division Of Student Life" style="margin-top: -20px;"></a><br>
 
-					<p>The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.</p>
-				<% end_if %>
-				<p>145 iowa memorial union<br>
-				cab@uiowa.edu
-				</p>
+				<p>The University of Iowa Libraries<br />
+					100 Main Library (LIB)<br />
+					Iowa City, IA 52242-1420</p>
 		</div>
 				
 		<div class="large-4 columns">
@@ -31,10 +26,7 @@
 			</div>
 		</div>
 		<div class="large-4 columns hide-print">
-			<p>Individuals with disabilities are encouraged to attend all University of Iowa - sponsored events. If you are a person with a disability who requires an accommodation in order to participate in this program, please contact the Center for Student Involvement and Leadership in advance at 319-335-3059.</p> 
-			<!--<h4>Support The Division</h4>-->
-			
-			<!--<a href="https://www.givetoiowa.org/GiveToIowa/WebObjects/GiveToIowa.woa/wa/goTo?area=studentlife" class="appt-btn">Give Online Now</a> -->
+			<p>The University of Iowa Libraries is the largest library system in Iowa and 9th in materials expenditures among U.S. public research libraries (ARL FY10 data). The University’s Main Library, Hardin Library for the Health Sciences, 5 branch libraries, and the Law Library contain more than 5 million volumes.</p> 
 		</div>
 	</div>
 	<div class="row">

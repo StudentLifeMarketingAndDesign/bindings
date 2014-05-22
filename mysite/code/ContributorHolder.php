@@ -38,6 +38,10 @@ class ContributorHolderPage_controller extends Page_Controller {
 		}
 	}
 	
+	public function AllContributors(){
+		return Contributor::get()->sort("LastName");
+	}
+
 	public function getContributorArticles(){
 		$contributorID = $this->request->param('ID');
 		if ($contributorID){

@@ -2,6 +2,7 @@
 	position: fixed;
 	overflow-y: scroll;
 	height: 100%;
+	background-color: #F8F8F8;
 	@media #{$medium-up} {
 		@include grid-column(
 			$collapse: true
@@ -11,6 +12,12 @@
 
 .side-nav{
 	padding: 10px;
+
+	h3 small{
+		display: block;
+		line-height: 1.1;
+	}
+
 	@media #{$medium-up}{
 		padding: 0;
 	}
@@ -36,7 +43,6 @@
 	}
 	p, span, h3{
 		@media #{$large-up} {
-			margin-left: 25%;
 			margin-right: 2px;
 		}
 	}

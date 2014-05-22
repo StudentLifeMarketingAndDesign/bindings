@@ -1,8 +1,11 @@
 <li class="<% if $LinkingMode == "current" || $LinkingMode == "section" %>active<% end_if %>">
 	<a href="$Link">
-		<img src="http://lorempixel.com/50/50/" class="cover-preview" />
-		<h3>$MenuTitle</h3>
-		<% include Byline %>
+		<h3>$MenuTitle <small>$Subheader</small></h3>
+		<% if $Contributors %>
+			<% loop Contributors %>
+				<p class="byline">$FirstName $LastName<% if $Position %>, $Position<% end_if %></p>
+			<% end_loop %>
+		<% end_if %>
 		<div class="clearfix"></div>
 	</a>
 </li>

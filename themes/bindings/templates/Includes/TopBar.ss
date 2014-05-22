@@ -7,22 +7,6 @@
 			<li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
 		</ul>
 		<section class="top-bar-section">
-
-			<%-- Right Nav Section --%>
-			<ul class="right">
-				<% if $CurrentMember %>
-				<li class="has-dropdown">
-					<a href="admin/myprofile">Hi $CurrentMember.FirstName</a>
-					<ul class="dropdown">
-						<li><a href="admin/">Admin</a></li>
-						<li><a href="admin/myprofile">My Profile</a></li>
-						<li><a href="Security/logout">Logout</a></li>
-					</ul>
-				</li>
-				<% else %>
-				<li><a href="Security/login?BackURL=%2Fadmin" data-reveal-id="login-form-modal">Login</a></li>
-				<% end_if %>
-			</ul>
 			<%-- Left Nav Section --%>
 			<ul class="right">
 				<% loop Menu(1) %>
