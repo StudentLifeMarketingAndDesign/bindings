@@ -26,16 +26,15 @@
 <body class="$ClassName.ATT">
 <div class="off-canvas-wrap">
 	<div class="inner-wrap">
-	<% include TopBar %>
+	<%--<% include TopBar %>--%>
 	<% include SmallTabBar %>
-
 	<% include OffCanvasSideNav %>	
 	<div class="main typography" role="main">
 		<div class="content row full-width">
-				<div class="xxlarge-2 xlarge-3 large-3 side-nav-column large-uncentered columns show-for-large-up">
+				<div class="xxlarge-2 xlarge-2 large-3 side-nav-column large-uncentered columns show-for-large-up">
 					<% include SideNav %>
 				</div>
-				<div class="xxlarge-10 xlarge-9 large-9 main-column columns">
+				<div class="xxlarge-10 xlarge-10 large-9 main-column columns">
 					$Layout
 				<% include Footer %>
 				</div>

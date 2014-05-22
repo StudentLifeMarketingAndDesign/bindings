@@ -43,14 +43,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-column {
-    @media #{$medium-up} {
+    @media #{$large-up} {
         @include grid-column($collapse: true);
     }
 }
 /* Content padding so it doesn't run up against the sidenav  */
 article header, article .article-text, article .content-text, .footer {
     @media #{$medium-up} {
-        padding-left: 20px;
+        
     }
     @media #{$large-up} {
         padding-left: 40px;

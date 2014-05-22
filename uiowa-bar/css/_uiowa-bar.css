@@ -1,0 +1,73 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 980px;
+    position: relative;
+    padding: 0 5px;
+}
+.uiowa-topbar {
+    background: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.uiowa-logo {
+	float: left;
+	display: block;
+	padding: 7px 0;
+	background: none;
+	opacity: 0.7;
+}
+.uiowa-logo:hover{
+	opacity: 1;
+}
+/* For UI Police site and others with http:// anchor selectors */
+a.uiowa-logo[href^="http:"] {
+	background: none;
+}
+.uiowa-search {
+	display: none;
+	float: right;
+	padding: 5px 0;
+}
+@media only screen and (min-width: 480px) {
+	.uiowa-search {
+		display: block;
+	}
+}
+.uiowa-search-input {
+    -webkit-appearance: textfield;
+    background: #fff;
+    border: 1px solid #000;
+    color: #222;
+    display: inline-block;
+    font-size: 13px;
+    font-family: arial, verdana, sans-serif;
+    line-height: normal;
+    padding: 5px 0 4px 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 120px;
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
+    -webkit-transition: width 0.2s ease, background-color 0.2s ease;
+       -moz-transition: width 0.2s ease, background-color 0.2s ease;
+            transition: width 0.2s ease, background-color 0.2s ease;
+}
+.uiowa-search-input:focus {
+    outline: none;
+    text-shadow: none;
+    width: 180px;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: opacity 0.5s 0.5s ease; 
+    opacity: 0;
+}
+.uiowa-search label { /* visually hides the label */
+    border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;
+}
+.uiowa-search-btn {
+    border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;
+}
+.clear{
+	clear: both;
+}

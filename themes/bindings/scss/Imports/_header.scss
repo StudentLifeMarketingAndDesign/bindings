@@ -1,8 +1,9 @@
 h1.title img, .title-area h1 img {
 	height: 30px;
 	@media #{$medium-up} {
-		height: 45px;
+		height: 30px;
 		margin-top: 6px;
+		padding-left: 20px;
 	}
 }
 

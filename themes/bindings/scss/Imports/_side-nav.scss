@@ -21,23 +21,27 @@
 	@media #{$medium-up}{
 		padding: 0;
 	}
+
+	li{
+		border-bottom: 1px solid #eee
+	}
 	:last-child{
 		border-bottom: 0;
 	}
 	h1, h2, h3, h4, h5, h6{
 		text-transform: none;
 	}
-	a{
-		padding: 10px 0;
+	a {
 		color: #646464;
+		padding: 20px 15px;
 	}
+
 	p{
 		line-height: 1;
-
 	}
 
-
 	h3{
+		margin-top: 0;
 		font-size: rem-calc(18);
 		line-height: 1;
 	}
@@ -46,37 +50,49 @@
 			margin-right: 2px;
 		}
 	}
-	.cover-preview {
-		display: none;
-		@media #{$large-up} {
-			display: block;
-			width: 20%;
-			float: left;
-			margin-top: 5px;
-		}
-	}
+	
 	.byline{
 		font-size: rem-calc(12);
+		margin-bottom: 0;
 	}
-
-	li{
-		border-bottom: 1px solid #F7F7F7
-
-	}
-
 	a:hover, li.active a{
-		
-		background-color: $lightGray;
+		background-color: #fff;
 		background-image: url('../images/sidenav-active.png');
 		background-position: 100% 0;
 		background-repeat: repeat-y;
 	}
+
+	li.title-nav {
+		background-color: #8C8C8C;
+		:hover{
+			background-color: #9B9B9B;
+		}
+		a{
+			padding: 5px 15px;
+		}
+		.category{
+			display: inline;
+			margin-right: 0;
+			color: #D0D0D0;
+
+		}
+		h1{
+			margin: 0;
+			margin-top: -20px;
+			text-align: center;
+		}
+		h1 img {
+			height: 30px;
+			@media #{$medium-up} {
+				height: 30px;
+				margin-top: 20px;
+				margin-right: 5px;
+			}			
+		}
+	}
 }
 .side-nav>li.issue-title {
 	text-transform: uppercase;
-}
-.side-nav a {
-	padding: 10px 5px;
 }
 
 ul.off-canvas-list 
@@ -100,7 +116,6 @@ ul.off-canvas-list
 		margin-top: -5px;
 	}
 }
-
 
 .move-right .exit-off-canvas{
 	box-shadow: none;
