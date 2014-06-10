@@ -66,9 +66,9 @@ article {
 		padding-top: 20px;
 	}
     @media #{$large-up}{
-    	padding-top: 35px;
+    	padding-top: 45px;
     }
-    max-width: 1024px;
+    
     header {
         font-family: $header-font-family;
         h1{
@@ -83,7 +83,7 @@ article {
         }
     }
     .article-text, .content-text {
-        max-width: 1024px;
+        max-width: 720px;
         min-height: 300px;
     }
     .content-text * {

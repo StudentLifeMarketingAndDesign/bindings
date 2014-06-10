@@ -35,6 +35,13 @@
 			height: 35px;
 		}
 	}
+
+	section.right{
+		font-family: $header-font-family;
+		text-transform: uppercase;
+		font-size: rem-calc(13);
+		padding-right: 10px;
+	}
 }
 
 
